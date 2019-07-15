@@ -12,7 +12,7 @@ def cdConfig = [
     stage: false,
     prod: false
   ],
-  branch: "RDO-3884",
+  branch: "test",
 ]
 
 makci{
