@@ -1,18 +1,24 @@
 @Library("mak-dsl@test") _
 
-def deployConfig = [
-    deploy: [
-        int: true,
-        qa: false,
-        stage: false,
-        prod: false
-    ],
-    branch: "test"  
+def ciConfig = [
+  GoVersion: "1.11.4",
+  CgoEnabled:"0"
 ]
 
+def cdConfig = [
+  env: [
+    int: false,
+    qa: false,
+    stage: false,
+    prod: false
+  ],
+  branch: "RDO-3884",
+]
 
 makci{
-    civariables = deployConfig
-
+    ci = ciConfig
+    cd = [
+        configValues: appConfig,
+        deployStrategy: cdConfig
+    ]
 }
-
