@@ -51,6 +51,6 @@ makjuno{
     cd = [ 
         deployStratergy: cdConfig,           //this links to above "def cdConfig"
         configValues:  appConfig   
-
+    ]  
 }
 
