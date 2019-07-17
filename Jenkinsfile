@@ -49,7 +49,7 @@ def cdConfig  = [
 makjuno{
     ci = ciConfig
     cd = [ 
-        deployStratergy: cdConfig,           
+        deployStrategy: cdConfig,           
         configValues:  appConfig   
     ]  
 }
