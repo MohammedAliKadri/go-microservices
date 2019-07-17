@@ -36,7 +36,7 @@ def appConfig = [
 ]
 
 def cdConfig  = [
-    deploy: [
+    env: [
         int: true,
         qa: false,
         stage: false,
