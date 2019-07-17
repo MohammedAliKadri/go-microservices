@@ -42,7 +42,7 @@ def cdConfig  = [
         stage: false,
         prod: false
     ],
-    branch: "test"  
+    branch: "test",  
 ]
 
 
